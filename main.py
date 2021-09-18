@@ -3,9 +3,9 @@ from optimizations import bisection, golden_section
 
 def main():
     expr = "12 * x*x - 2/3 * x*x*x"
-    lower_bound = -100
-    upper_bound = 16
-    print(bisection(lower_bound, upper_bound, expr))
+    lower_bound = -20
+    upper_bound = 10
+    print(golden_section(lower_bound, upper_bound, expr, show_animation=True, animation_speed=2))
 
 
 if __name__ == '__main__':
